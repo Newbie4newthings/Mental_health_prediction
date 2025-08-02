@@ -25,9 +25,14 @@
     "8501": {
       "label": "Application",
       "onAutoForward": "openPreview"
+    },
+    "8000": {
+      "label": "FastAPI Backend",
+      "onAutoForward": "openBrowser"
     }
   },
   "forwardPorts": [
-    8501
+    8501,
+    8000
   ]
 }
