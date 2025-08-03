@@ -66,7 +66,7 @@ if st.button("Predict Risk"):
     # Send data to the API
     try:
         # Make a POST request to the prediction endpoint
-        response = requests.post("http://localhost:8000/predict", json=data)
+        response = requests.post("https://mental-health-prediction-tym0.onrender.com/predict", json=data)
         if response.status_code == 200:
             prediction = response.json().get("prediction")
             st.success(f"Your predicted mental health risk is: **{prediction}**")
@@ -80,7 +80,7 @@ with col2:
     st.subheader("Prediction History")
     try:
         # Fetch prediction history from the API
-        response = requests.get("http://localhost:8000/history")
+        response = requests.get("https://mental-health-prediction-tym0.onrender.com/history")
         if response.status_code == 200:
             records = response.json()
             if records:
