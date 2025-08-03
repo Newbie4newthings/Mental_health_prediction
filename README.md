@@ -2,6 +2,13 @@
 
 This is a machine learning-based application that predicts mental health risk levels based on various lifestyle factors. The application uses FastAPI for the backend API, SQLite for the database and Streamlit for the frontend interface.
 
+## Demo Link 
+https://mentalhealthprediction-ftyuxwnvfvntz8ptdrhtwi.streamlit.app/
+
+Note: The History and Predict api's don't come up immediatly you visit the site it takes atleast 1 min for the backend server to comeback on after going to sleep due to inactivity 
+- Frontend is hosted on Streamlit.io
+- Backend is hosted on Render
+
 ## Features
 
 - Predicts mental health risk levels (Low Risk, Medium Risk, High Risk)
@@ -39,6 +46,9 @@ python -m venv venv
 ```bash
 pip install -r requirements.txt
 ```
+4. Chnage the api's point in the Frontend.py file:
+   - for hosting on your local machine use `http://localhost:8000`
+   - for hosting on the internet use your hostinng server endpoints
 
 ## Usage
 
